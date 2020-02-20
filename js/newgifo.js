@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async() => {
+document.addEventListener("DOMContentLoaded", async () => {
     const $button_start = document.querySelector(".button_start");
     const $pop_up1 = document.querySelector(".container_pop_up1");
     const $pop_up2 = document.querySelector(".container_pop_up2");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         $input_my_guifos.style.display = "none";
     });
 
-    $button_capture.addEventListener("click", async() => {
+    $button_capture.addEventListener("click", async () => {
         $button_container2.style.display = "none";
         $button_capture.style.visibility = "none";
         $button_camera.style.display = "none";
@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", async() => {
         recorder = await startRecord(recorder, $video_container);
     });
 
-    $button_ready.addEventListener("click", async() => {
+    $button_ready.addEventListener("click", async () => {
         await stopRecord(recorder, $video_container);
         img.style.display = "block";
     });
 
-    $button_repeat.addEventListener("click", async() => {
+    $button_repeat.addEventListener("click", async () => {
         $button_container_repeat.style.display = "none";
         $button_repeat.style.display = "none";
         $button_upload.style.display = "none";
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         $input_ready.style.display = "block";
     });
 
-    $button_upload.addEventListener("click", async() => {
+    $button_upload.addEventListener("click", async () => {
         $pop_up3.style.display = "block";
         $button_repeat.style.display = "none";
         $button_upload.style.display = "none";
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async() => {
             console.log(error);
         }
     };
-    const getMedia = async() => {
+    const getMedia = async () => {
         let stream = null;
         try {
             stream = await navigator.mediaDevices.getUserMedia({
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         }
     };
 
-    const startRecord = async(recorder, container) => {
+    const startRecord = async (recorder, container) => {
         let stream = await getMedia();
         container.srcObject = stream;
         container.play();
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async() => {
             quality: 10,
             width: 360,
             hidden: 240,
-            onGifRecordingStarted: function() {
+            onGifRecordingStarted: function () {
                 document.querySelector(".title_message").innerHTML =
                     "Capturando tu guifo";
             }
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         return recorder;
     };
 
-    const stopRecord = async(recorder, container) => {
+    const stopRecord = async (recorder, container) => {
         $button_container_ready.style.display = "none";
         $button_ready.style.display = "none";
         $button_clock.style.display = "none";
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         return blob;
     };
 
-    const upload = async(endpoint, body) => {
+    const upload = async (endpoint, body) => {
         try {
             const res = await fetch(endpoint, {
                 method: "POST",
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         const response = await upload(endpoints.upload, form);
         const actualGifs = JSON.parse(localStorage.getItem("myGifs")) || [];
         const newGifs = [...actualGifs, response.id];
-        const gif = await getData(`${api_url}?api_key=${my_key}&ids=${newGifs}`);
+        const gif = await getData(`${api_url}?api_key=${api_key}&ids=${newGifs}`);
         renderMyGif(gif);
         localStorage.setItem("myGifs", JSON.stringify(newGifs));
         return response;
@@ -207,8 +207,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         img.setAttribute("height", "434");
         $container_img_info.appendChild(img);
     };
-});
-
-$button_ready2.addEventListener("click", () => {
-    $pop_up2.style.display = "block";
+    $button_ready2.addEventListener("click", () => {
+        $pop_up2.style.display = "block";
+    });
 });

@@ -1,10 +1,10 @@
 const api_url = 'https://api.giphy.com/v1/gifs'
-const my_key = 'nS01RK7xAnsFvtF88FSBh8mYdtygo4CZ'
+const api_key = 'nS01RK7xAnsFvtF88FSBh8mYdtygo4CZ'
 const endpoints = {
-    search: `${api_url}/search?api_key=${my_key}`,
-    trending: `${api_url}/trending?api_key=${my_key}`,
-    random: `${api_url}/random?api_key=${my_key}&tag=`,
-    upload: `https://upload.giphy.com/v1/gifs?api_key=${my_key}`
+    search: `${api_url}/search?api_key=${api_key}`,
+    trending: `${api_url}/trending?api_key=${api_key}`,
+    random: `${api_url}/random?api_key=${api_key}&tag=`,
+    upload: `https://upload.giphy.com/v1/gifs?api_key=${api_key}`
 }
 
 const getData = async endpoint => {
