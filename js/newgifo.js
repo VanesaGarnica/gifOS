@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", async() => {
     // Constants
 
     const $button_start = document.querySelector(".button_start");
-    const $pop_up1 = document.querySelector(".container_pop_up1");
-    const $pop_up2 = document.querySelector(".container_pop_up2");
-    const $pop_up3 = document.querySelector(".container_pop_up3");
-    const $pop_up4 = document.querySelector(".container_pop_up4");
-    const $pop_up5 = document.querySelector(".container_pop_up5");
-    const $pop_up6 = document.querySelector(".container_pop_up6");
+    const $pop_up1 = document.querySelector(".container_info");
+    const $pop_up2 = document.querySelector(".container_checking");
+    const $pop_up3 = document.querySelector(".container_capture");
+    const $pop_up4 = document.querySelector(".container_preview");
+    const $pop_up5 = document.querySelector(".container_upload");
+    const $pop_up6 = document.querySelector(".container_success_gifo");
     const $my_guifos = document.querySelector(".my_guifos");
     const $button_capture = document.querySelector("#button_capture");
     const $video_container = document.querySelector("#video_container");
