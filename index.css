@@ -1619,4 +1619,10 @@ input[type="text"] {
   position: relative;
   bottom: 35px;
 }
+
+.container_my_guifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=index.css.map */
