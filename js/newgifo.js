@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", async() => {
 
     // Functions for click
 
+    document
+        .querySelector("#btn_cancel_back_home")
+        .addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    document
+        .querySelector("#button_cancel_loading")
+        .addEventListener("click", () => {
+            window.location.href = "newgifo.html";
+        });
+
     $button_start.addEventListener("click", async() => {
         $pop_up2.style.display = "block";
         $pop_up1.style.display = "none";

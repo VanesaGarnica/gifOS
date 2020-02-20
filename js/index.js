@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", async() => {
         body.classList.remove("dark");
     });
 
+    document.querySelector(".btn_create").addEventListener("click", () => {
+        window.location.href = "newgifo.html";
+    });
+
     const search_input = document.querySelector("#search_input");
     const search_button = document.querySelector("#search_button");
     const hardcode_suggest = document.querySelector(".hardcode_suggest");
