@@ -17,11 +17,11 @@
           box-shadow: 0 1px 0 0 #110038;
 }
 
-.dark .navbar_brand_image {
+.dark .navbar_logo {
   background: no-repeat;
 }
 
-.dark .navbar_brand_image #logo_light {
+.dark .navbar_logo #logo_light {
   background-image: url("/assets/gifOF_logo_dark.png");
   display: none;
 }
@@ -198,11 +198,11 @@
           box-shadow: 0 1px 0 0 #110038;
 }
 
-.light .navbar_brand_image {
+.light .navbar_logo {
   background: no-repeat;
 }
 
-.light .navbar_brand_image #logo_dark {
+.light .navbar_logo #logo_dark {
   background-image: url("/assets/gifOF.png");
   display: none;
 }
@@ -424,7 +424,7 @@
   display: block;
 }
 
-.navbar_brand_container {
+.navbar_principal_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,11 +1,102 @@
-.light { background-color: #fff4fd; color: black; font-size: 1rem; .top_phrase { padding-left: 7px; padding-top: 4px; width: 100vw; height: 23px; font-size: 12px; color: white; background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%); box-shadow: 0
-1px 0 0 #110038; } .navbar_brand_image { #logo_dark { background-image: url("/assets/gifOF.png"); display: none; } background: no-repeat; } ul { display: flex; align-items: center; height: 100px; } li { list-style: none; } .button_create { width: 144px;
-height: 36px; background: #f7c9f3; border: 1px solid #110038; font-size: 1rem; box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; color: #110038; margin-right: 14px; &:hover { background: #e6bbe2; } } .button_choose { width: 131px; height:
-36px; background: #f7c9f3; border: 1px solid #110038; box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; font-size: 16px; color: #110038; letter-spacing: 0; text-align: center; line-height: 18px; &:hover { background: #e6bbe2; } } .choose_dropdown_list
-{ width: 36px; height: 36px; background-color: #f7c9f3; border: 1px solid #110038; box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; color: #110038; &:hover { background: #e6bbe2; } } } #mys_guifos_link { width: 76px; height: 18px; font-size:
-16px; color: #110038; letter-spacing: 0; line-height: 18px; text-decoration: none; margin-left: 15px; } .container { .container_search { background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%); } .search_button { &:hover { color: #110038; background:
-#997d97; border: 1px solid #110038; box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; } } } .suggestion { width: 1355px; height: 32px; background: #fffafe; border: 1px solid #e6bbe2; box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px
-2px 0 0 #80687d; margin: 40px; } .trending_container { display: flex; flex-flow: row wrap; justify-content: center; } .gif { width: 288px; height: 313px; background-color: #b4b4b4; box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff; margin:
-34px; .container_gif { width: 288px; height: 24px; background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%); } p { color: white; } .btn_close { margin-left: 260px; position: relative; bottom: 15px; } .img_gif { width: 288px; height: 288px;
-position: absolute; } .see_more { width: 81px; height: 34px; color: #ffffff; background: #4180f6; border: 1px solid #4c2f99; box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff; position: relative; z-index: 1; top: 240px; left: 15px; }
-}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+    <title>gifOS</title>
+</head>
+
+<body class="light">
+    <header>
+        <section class="top_phrase">¡Bienvenidos/as a Gifos.com!------Donde los Gifos están.//////Número de visitas:
+        </section>
+        <section class="navbar_principal_container">
+            <div class="navbar_logo">
+                <img id="logo_light" src="./assets/gifOF_logo.png" alt="" />
+                <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="" />
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="newgifo.html"><button class="button_create">Crear Gifos</button></a></li>
+                        <li><button class="button_choose">Elegir Tema</button></li>
+                        <li class="dropdown"><button class="choose_dropdown_list"><img src="assets/dropdown.svg"
+                                    alt="deploy"></button>
+                            <div class="dropdown_content">
+                                <a href="#" class="day">Saylor Day</a>
+                                <a href="#" class="night">Saylor Night</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="newgifo.html" id="mys_guifos_link">Mis Guifos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="container">
+            <section class="container_search">
+                <p id="search">Buscar</p>
+            </section>
+            <input type="text" class="input" id="search_input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras..">
+            <button class="search_button" id="search_button"><img src="assets/lupa.svg" alt="loupe"
+                    class="loupe">Buscar</button>
+        </section>
+        <section class="hardcode_suggest">
+            <div class="suggested_gif" id="btn_birds">#Birds</div>
+            <div class="suggested_gif" id="btn_epic">#Epic</div>
+            <div class="suggested_gif" id="btn_videogames">#Videogames</div>
+        </section>
+        <section class="suggestion">
+            <p>Hoy te sugerimos</p>
+        </section>
+        <section class="trending_container" id="trending_container">
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#Harry Potter</p>
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img1" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="see_more" id="sm1">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#Gilmore Girls</p>
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img2" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="see_more" id="sm2">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#Game of thrones</p>
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img3" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="see_more" id="sm3">Ver más</button>
+            </div>
+            <div class="gif">
+                <div class="container_gif">
+                    <p>#Disney</p>
+                    <img src="assets/button3.svg" alt="btn_close" class="btn_close">
+                </div>
+                <img id="img4" src="https://i.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.webp" alt="" class="img_gif">
+                <button class="see_more" id="sm4">Ver más</button>
+        </section>
+        <section class="suggestion">
+            <p>Tendencias</p>
+        </section>
+        <section id="search_container">
+        </section>
+        </section>
+        <section id="container_hardcode_suggest">
+        </section>
+    </header>
+</body>
+
+</html>
