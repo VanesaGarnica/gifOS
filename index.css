@@ -1621,8 +1621,6 @@ input[type="text"] {
 }
 
 .container_my_guifos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */

@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", async() => {
         let blob = await recorder.getBlob();
         let response = await sendGif(blob);
         console.log("sent a gif");
-        //const gif = await getData(`${api_url}/${response.id}?my_key=${my_key}`);
-        //renderLastGif(gif);
+        const gif = await getData(`${api_url}/${response.id}?api_key=${my_key}`);
+        renderLastGif(gif);
         //renderOtherGif(gif);
         $pop_up5.style.display = "none";
         $pop_up6.style.display = "block";
@@ -172,9 +172,9 @@ document.addEventListener("DOMContentLoaded", async() => {
         console.log(newGifs);
         localStorage.setItem("myGifs", JSON.stringify(newGifs));
         if (Array.isArray(newGifs)) {
-            await getData(`${api_url}?my_key=${my_key}&ids=${newGifs}`);
+            await getData(`${api_url}?api_key=${my_key}&ids=${newGifs}`);
         } else {
-            await getData(`${api_url}/${response.id}?my_key=${my_key}`);
+            await getData(`${api_url}/${response.id}?api_key=${my_key}`);
         }
         return response;
     };
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 
     const myGifs = JSON.parse(localStorage.getItem("myGifs")) || [];
     localStorage.setItem("myGifs", JSON.stringify(myGifs));
-    const gifs = await getData(`${api_url}?my_key=${my_key}&ids=${myGifs}`);
+    const gifs = await getData(`${api_url}?api_key=${my_key}&ids=${myGifs}`);
     renderMyGifs(gifs);
 
     // Functions for timer
