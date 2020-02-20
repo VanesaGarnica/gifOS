@@ -38,6 +38,7 @@
         margin-right: 14px;
         &:hover {
             background: #e6bbe2;
+            border: dotted;
         }
     }
     .btn_choose {
@@ -53,6 +54,7 @@
         line-height: 18px;
         &:hover {
             background: #e6bbe2;
+            border: dotted;
         }
     }
     .choose_theme {
@@ -64,6 +66,7 @@
         color: #110038;
         &:hover {
             background: #e6bbe2;
+            border: dotted;
         }
     }
 }

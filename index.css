@@ -57,6 +57,7 @@
 
 .dark .btn_create:hover {
   background: #ce36db;
+  border: dotted;
 }
 
 .dark .btn_choose {
@@ -76,6 +77,7 @@
 
 .dark .btn_choose:hover {
   background: #ce36db;
+  border: dotted;
 }
 
 .dark .choose_theme {
@@ -91,6 +93,7 @@
 
 .dark .choose_theme:hover {
   background: #ce36db;
+  border: dotted white;
 }
 
 .dark #mys_guifos_link {
@@ -235,6 +238,7 @@
 
 .light .btn_create:hover {
   background: #e6bbe2;
+  border: dotted;
 }
 
 .light .btn_choose {
@@ -253,6 +257,7 @@
 
 .light .btn_choose:hover {
   background: #e6bbe2;
+  border: dotted;
 }
 
 .light .choose_theme {
@@ -267,6 +272,7 @@
 
 .light .choose_theme:hover {
   background: #e6bbe2;
+  border: dotted;
 }
 
 #mys_guifos_link {
