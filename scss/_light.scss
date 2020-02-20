@@ -71,17 +71,6 @@
     }
 }
 
-#mys_guifos_link {
-    width: 76px;
-    height: 18px;
-    font-size: 16px;
-    color: #110038;
-    letter-spacing: 0;
-    line-height: 18px;
-    text-decoration: none;
-    margin-left: 15px;
-}
-
 .container {
     .container_search {
         background: linear-gradient(left, #4180f6 0%, #f7c9f3 100%);
@@ -147,4 +136,16 @@
         top: 240px;
         left: 15px;
     }
+}
+
+.btnflat {
+    color: black;
+}
+
+.btnflat:hover {
+    border: dotted black;
+}
+
+.btnflat:active {
+    color: grey;
 }
