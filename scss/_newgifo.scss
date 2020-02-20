@@ -1005,3 +1005,44 @@ input[type="text"] {
 .container_my_guifos {
     display: block;
 }
+
+.barra_carga {
+    .barra_barra {
+        width: 240px;
+        height: 24px;
+        position: absolute;
+        top: 598px;
+        left: 449px;
+        background: #b4b4b4;
+        box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #fffcfc;
+        .divisor1 {
+            width: 60px;
+            height: 20px;
+            background: #f7c9f3;
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        .divisor2 {
+            width: 176px;
+            height: 20px;
+            background: #999999;
+            margin-top: -20px;
+            margin-left: 62px;
+        }
+    }
+    .forward {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: #f7c9f3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+        margin-left: 420px;
+        margin-top: -88px;
+    }
+}

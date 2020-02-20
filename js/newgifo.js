@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     const secondsLabel = document.getElementById("seconds");
     let recorder = null;
     let blob = null;
+    let lastGif = null;
 
     // Functions for click
 
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         console.log("sent a gif");
         const gif = await getData(`${api_url}/${response.id}?api_key=${my_key}`);
         renderLastGif(gif);
+        lastGif = gif;
         //renderOtherGif(gif);
         $pop_up5.style.display = "none";
         $pop_up6.style.display = "block";
@@ -90,9 +92,8 @@ document.addEventListener("DOMContentLoaded", async() => {
 
     document.querySelector(".button_copy").addEventListener("click", async() => {
         let input = document.createElement("input");
-        let blob = await recorder.getBlob();
-        const blobUrl = URL.createObjectURL(blob);
-        input.setAttribute("value", blobUrl);
+        let url = lastGif.images.downsized.url;
+        input.setAttribute("value", url);
         document.body.appendChild(input);
         input.select();
         document.execCommand("copy");
