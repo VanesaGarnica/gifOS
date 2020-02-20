@@ -10,7 +10,7 @@
     display: inline-block;
 }
 
-.dropdown_content {
+.content_list {
     display: none;
     position: absolute;
     background: #e6e6e6;
@@ -21,7 +21,7 @@
     z-index: 1;
 }
 
-.dropdown_content a {
+.content_list a {
     width: 140px;
     height: 36px;
     background-color: #fcfbffde;
@@ -36,7 +36,7 @@
     line-height: 22px;
 }
 
-.dropdown_content a:hover {
+.content_list a:hover {
     background: #2e32fb;
     border: 1px solid rgba(51, 53, 143, 0.2);
     box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0;
@@ -46,7 +46,7 @@
     line-height: 22px;
 }
 
-.dropdown:hover .dropdown_content {
+.dropdown:hover .content_list {
     display: block;
 }
 
