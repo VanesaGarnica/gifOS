@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     const $a = document.querySelector(".a_download");
     const minutesLabel = document.getElementById("minutes");
     const secondsLabel = document.getElementById("seconds");
+    const bodyclass = localStorage.getItem("color-theme");
     let recorder = null;
     let blob = null;
     let lastGif = null;
@@ -286,4 +287,19 @@ document.addEventListener("DOMContentLoaded", async() => {
             Clock.start();
         }
     };
+
+    let activateThemes = bodyclass => {
+        const body = document.querySelector("body");
+        if (bodyclass == "dark-mode") {
+            body.classList.add("dark");
+            body.classList.remove("light");
+        } else if (bodyclass == "light-mode") {
+            body.classList.add("light");
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("light");
+        }
+    };
+
+    activateThemes(bodyclass);
 });
