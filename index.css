@@ -497,10 +497,14 @@
   line-height: 18px;
 }
 
-.container .loupe {
+.loupe {
   width: 16px;
   height: auto;
   color: #8f8f8f;
+}
+
+.loupe :hover {
+  border: dotted black;
 }
 
 .suggested_gif {
@@ -521,6 +525,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.suggested_gif:hover {
+  border: dotted black;
 }
 
 .hardcode_suggest {

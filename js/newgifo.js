@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async() => {
-    // Constants
+    // Constantes
 
     const $button_start = document.querySelector(".button_start");
     const $pop_up1 = document.querySelector(".container_info");

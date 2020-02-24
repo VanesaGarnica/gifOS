@@ -25,9 +25,23 @@ document.addEventListener("DOMContentLoaded", async() => {
     const btn_epic = document.querySelector("#btn_epic");
     const btn_videogames = document.querySelector("#btn_videogames");
 
-    search_input.addEventListener("keyup", () => {
-        console.log("key_up");
-        hardcode_suggest.style.display = "flex";
+    search_input.addEventListener("keyup", function(event) {
+        let value = search_input.value.trim();
+
+        if (!value) {
+            search_button.style.color = "#b4b4b4";
+        } else {
+            search_button.style.color = "#000000";
+        }
+
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            search_button.click();
+        } else if (event.keyCode === 8) {
+            hardcode_suggest.style.display = "none";
+        } else {
+            hardcode_suggest.style.display = "flex";
+        }
     });
 
     const gifs = await getData(`${endpoints.search}`);
@@ -49,6 +63,12 @@ document.addEventListener("DOMContentLoaded", async() => {
 
         scroll = document.getElementById("search_container");
         scroll.scrollIntoView({ behavior: "smooth" });
+    });
+    search_input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            search_button.click();
+        }
     });
 
     document.querySelector("#sm1").addEventListener("click", () => {
@@ -95,5 +115,57 @@ document.addEventListener("DOMContentLoaded", async() => {
 
         scroll = document.getElementById("container_hardcode_suggest");
         scroll.scrollIntoView({ behavior: "smooth" });
+    });
+
+    // ACTIVAR THEMES desde variable almacenada en session storage
+
+    /*const body = document.querySelector("#body");
+                                  const logo = document.getElementById("#header--navbar--logo");
+                                  const bodyclass = sessionStorage.getItem("body");
+
+                                  let activateThemes = bodyclass => {
+                                      if (bodyclass == "light") {
+                                          body.classList.remove("dark");
+                                          body.classList.add("light");
+                                          logo.src = "images/gifOF_logo.png";
+                                      } else if (bodyclass == "dark") {
+                                          body.classList.remove("light");
+                                          body.classList.add("dark");
+                                          logo.src = "images/gifOF_logo_dark.png";
+                                      } else {
+                                          body.classList.add("light");
+                                      }
+                                  };
+
+                                  activateThemes(bodyclass);*/
+    const body = document.querySelector("body");
+    const bodyclass = localStorage.getItem("color-theme");
+
+    let activateThemes = bodyclass => {
+        if (bodyclass == "dark-mode") {
+            body.classList.add("dark");
+            body.classList.remove("light");
+        } else if (bodyclass == "light-mode") {
+            body.classList.add("light");
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("light");
+        }
+    };
+
+    activateThemes(bodyclass);
+
+    document.querySelector(".night").addEventListener("click", () => {
+        const body = document.querySelector("body");
+        body.classList.add("dark");
+        body.classList.remove("light");
+        localStorage.setItem("color-theme", "dark-mode");
+    });
+
+    document.querySelector(".day").addEventListener("click", () => {
+        const body = document.querySelector("body");
+        body.classList.add("light");
+        body.classList.remove("dark");
+        localStorage.setItem("color-theme", "light-mode");
     });
 });

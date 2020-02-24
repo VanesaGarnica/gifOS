@@ -97,11 +97,12 @@
         letter-spacing: 0;
         line-height: 18px;
     }
-    .loupe {
-        width: 16px;
-        height: auto;
-        color: #8f8f8f;
-    }
+}
+
+.loupe {
+    width: 16px;
+    height: auto;
+    color: #8f8f8f;
 }
 
 .suggested_gif {
@@ -119,6 +120,9 @@
     margin-left: 11px;
     padding: 3px;
     align-items: flex-start;
+    &:hover {
+        border: dotted black;
+    }
 }
 
 .hardcode_suggest {
