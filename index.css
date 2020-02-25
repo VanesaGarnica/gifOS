@@ -186,7 +186,7 @@
   color: grey;
 }
 
-.dark .button_cancel {
+.dark #btn_cancel_back_home {
   background: #ee3efe;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
@@ -194,11 +194,11 @@
   color: white;
 }
 
-.dark .button_cancel:hover {
+.dark #btn_cancel_back_home:hover {
   background: #ce36db;
 }
 
-.dark .button_start {
+.dark #button_start {
   background: #ee3efe;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
@@ -206,7 +206,7 @@
   color: white;
 }
 
-.dark .button_start:hover {
+.dark #button_start:hover {
   background: #ce36db;
 }
 

@@ -142,7 +142,7 @@
     .btnflat:active {
         color: grey;
     }
-    .button_cancel {
+    #btn_cancel_back_home {
         background: #ee3efe;
         border: 1px solid #110038;
         box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
@@ -151,7 +151,7 @@
             background: #ce36db;
         }
     }
-    .button_start {
+    #button_start {
         background: #ee3efe;
         border: 1px solid #110038;
         box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
