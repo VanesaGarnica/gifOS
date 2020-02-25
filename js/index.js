@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", async() => {
 
         if (!value) {
             search_button.style.color = "#b4b4b4";
+            search_button.style.background = "#e6e6e6";
         } else {
             search_button.style.color = "#000000";
+            search_button.style.background = "#ee3efe";
         }
 
         if (event.keyCode === 13) {
@@ -106,27 +108,6 @@ document.addEventListener("DOMContentLoaded", async() => {
         scroll.scrollIntoView({ behavior: "smooth" });
     });
 
-    // ACTIVAR THEMES desde variable almacenada en session storage
-
-    /*const body = document.querySelector("#body");
-                                                const logo = document.getElementById("#header--navbar--logo");
-                                                const bodyclass = sessionStorage.getItem("body");
-
-                                                let activateThemes = bodyclass => {
-                                                    if (bodyclass == "light") {
-                                                        body.classList.remove("dark");
-                                                        body.classList.add("light");
-                                                        logo.src = "images/gifOF_logo.png";
-                                                    } else if (bodyclass == "dark") {
-                                                        body.classList.remove("light");
-                                                        body.classList.add("dark");
-                                                        logo.src = "images/gifOF_logo_dark.png";
-                                                    } else {
-                                                        body.classList.add("light");
-                                                    }
-                                                };
-
-                                                activateThemes(bodyclass);*/
     const body = document.querySelector("body");
     const bodyclass = localStorage.getItem("color-theme");
 

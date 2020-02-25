@@ -22,8 +22,11 @@
 }
 
 .dark .navbar_logo #logo_light {
-  background-image: url("/assets/gifOF_logo_dark.png");
   display: none;
+}
+
+.dark .navbar_logo #logo_dark {
+  display: block;
 }
 
 .dark ul {
@@ -183,6 +186,131 @@
   color: grey;
 }
 
+.dark .button_cancel {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_cancel:hover {
+  background: #ce36db;
+}
+
+.dark .button_start {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_start:hover {
+  background: #ce36db;
+}
+
+.dark #button_capture {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark #button_capture:hover {
+  background: #ce36db;
+}
+
+.dark .button_camera {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_repeat {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_repeat:hover {
+  background: #ce36db;
+}
+
+.dark .button_upload {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_upload:hover {
+  background: #ce36db;
+}
+
+.dark #button_cancel_loading {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark #button_cancel_loading:hover {
+  background: #ce36db;
+}
+
+.dark .button_copy {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_copy:hover {
+  background: #ce36db;
+}
+
+.dark .container_download {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .container_download:hover {
+  background: #ce36db;
+}
+
+.dark .container_download .a_download {
+  color: white;
+}
+
+.dark .button_ready2 {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.dark .button_ready2:hover {
+  background: #ce36db;
+}
+
+.dark .content_list a:hover {
+  background: #2e32fb;
+  color: white;
+}
+
 .light {
   background-color: #fff4fd;
   color: black;
@@ -207,8 +335,11 @@
 }
 
 .light .navbar_logo #logo_dark {
-  background-image: url("/assets/gifOF.png");
   display: none;
+}
+
+.light .navbar_logo #logo_light {
+  display: block;
 }
 
 .light ul {
@@ -370,6 +501,11 @@
   color: grey;
 }
 
+.content_list a:hover {
+  background: #e6dce4;
+  color: black;
+}
+
 #search_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,12 +554,10 @@
 }
 
 .content_list a:hover {
-  background: #2e32fb;
   border: 1px solid rgba(51, 53, 143, 0.2);
   -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0;
           box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0;
   font-size: 16px;
-  color: #ffffff;
   letter-spacing: 0;
   line-height: 22px;
 }
@@ -503,10 +637,6 @@
   color: #8f8f8f;
 }
 
-.loupe :hover {
-  border: dotted black;
-}
-
 .suggested_gif {
   width: 80vw;
   height: 34px;
@@ -553,6 +683,10 @@
   margin: 5px;
   background: none;
   border: none;
+}
+
+.input_ready {
+  color: black;
 }
 
 * {

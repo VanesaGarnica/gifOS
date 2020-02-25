@@ -142,4 +142,98 @@
     .btnflat:active {
         color: grey;
     }
+    .button_cancel {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .button_start {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    #button_capture {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .button_camera {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+    }
+    .button_repeat {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .button_upload {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    #button_cancel_loading {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .button_copy {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .container_download {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+        .a_download {
+            color: white;
+        }
+    }
+    .button_ready2 {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:hover {
+            background: #ce36db;
+        }
+    }
+    .content_list a:hover {
+        background: #2e32fb;
+        color: white;
+    }
 }

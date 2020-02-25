@@ -37,11 +37,9 @@
 }
 
 .content_list a:hover {
-    background: #2e32fb;
     border: 1px solid rgba(51, 53, 143, 0.2);
     box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0;
     font-size: 16px;
-    color: #ffffff;
     letter-spacing: 0;
     line-height: 22px;
 }
@@ -144,4 +142,8 @@
     margin: 5px;
     background: none;
     border: none;
+}
+
+.input_ready {
+    color: black;
 }
