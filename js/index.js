@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async() => {
             search_button.style.background = "#e6e6e6";
         } else {
             search_button.style.color = "#000000";
-            search_button.style.background = "#ee3efe";
+            search_button.style.background = "#f7c9f3";
         }
 
         if (event.keyCode === 13) {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     renderGifs(gifs);
 
     const anotherGifs = await getData(`${endpoints.trending}`);
-    const trendingGifs = anotherGifs.splice(0, 15);
+    const trendingGifs = anotherGifs.splice(0, 16);
     renderGifs(trendingGifs);
 
     //busqueda del imput

@@ -80,7 +80,7 @@
     .search_button {
         &:hover {
             color: #110038;
-            background: #997d97;
+            background: #e6bbe2;
             border: 1px solid #110038;
             box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
         }
@@ -155,4 +155,64 @@
 .content_list a:hover {
     background: #e6dce4;
     color: black;
+}
+
+#btn_cancel_back_home {
+    background: whitesmoke;
+}
+
+#btn_cancel_back_home:hover {
+    background: #e6bbe2;
+}
+
+#button_start {
+    background: whitesmoke;
+}
+
+#button_start:hover {
+    background: #e6bbe2;
+}
+
+#button_capture {
+    color: black;
+}
+
+#button_capture:hover {
+    background: #e6bbe2;
+}
+
+.button_repeat {
+    background: whitesmoke;
+}
+
+.button_repeat:hover {
+    background: #e6bbe2;
+}
+
+.button_upload {
+    background: whitesmoke;
+}
+
+.button_upload:hover {
+    background: #e6bbe2;
+}
+
+#button_cancel_loading {
+    background: whitesmoke;
+}
+
+#button_cancel_loading:hover {
+    background: #e6bbe2;
+}
+
+.button_copy:hover {
+    background: #e6bbe2;
+}
+
+.container_download:hover {
+    background: #e6bbe2;
+}
+
+.button_ready2:hover {
+    background: #e6bbe2;
 }

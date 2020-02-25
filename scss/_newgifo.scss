@@ -1,7 +1,6 @@
-.logo {
-    margin: 50px 0px 0px 100px;
+.navbar_logo {
     .arrow {
-        margin-bottom: 10px;
+        padding: 10px;
     }
 }
 
@@ -327,6 +326,12 @@ input[type="text"] {
     position: relative;
     left: 290px;
     bottom: 250px;
+}
+
+#logo_y_flecha {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
 }
 
 .container_upload {
