@@ -14,8 +14,10 @@
     }
     .navbar_logo {
         #logo_light {
-            background-image: url("/assets/gifOF_logo_dark.png");
             display: none;
+        }
+        #logo_dark {
+            display: block;
         }
         background: no-repeat;
     }
