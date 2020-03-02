@@ -123,42 +123,37 @@
 }
 
 .dark .trending_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 90vw;
 }
 
 .dark .gif {
-  width: 288px;
   height: 313px;
   background-color: #b4b4b4;
   -webkit-box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
           box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
-  margin: 34px;
 }
 
 .dark .gif .container_gif {
-  width: 288px;
+  width: 100%;
   height: 24px;
   background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
   background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dark .gif .btn_close {
-  margin-left: 260px;
+  padding-right: 10px;
 }
 
 .dark .gif .img_gif {
-  width: 288px;
-  height: 288px;
-  position: absolute;
+  width: 100%;
 }
 
 .dark .gif .see_more {
@@ -170,7 +165,7 @@
           box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
   position: relative;
   z-index: 1;
-  top: 240px;
+  top: -50px;
   left: 15px;
 }
 
@@ -311,6 +306,14 @@
   color: white;
 }
 
+.dark p {
+  color: black;
+}
+
+.dark #search {
+  color: white;
+}
+
 .light {
   background-color: #fff4fd;
   color: black;
@@ -431,32 +434,34 @@
 }
 
 .trending_container {
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
 }
 
 .gif {
-  width: 288px;
+  width: 20vw;
   height: 313px;
   background-color: #b4b4b4;
   -webkit-box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
           box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
-  margin: 34px;
+  margin: 10px;
 }
 
 .gif .container_gif {
-  width: 288px;
+  width: 100%;
   height: 24px;
   background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
   background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .gif p {
@@ -464,15 +469,13 @@
 }
 
 .gif .btn_close {
-  margin-left: 260px;
-  position: relative;
+  padding-right: 10px;
   bottom: 15px;
 }
 
 .gif .img_gif {
-  width: 288px;
-  height: 288px;
-  position: absolute;
+  width: 100%;
+  height: 95%;
 }
 
 .gif .see_more {
@@ -485,7 +488,7 @@
           box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
   position: relative;
   z-index: 1;
-  top: 240px;
+  top: -50px;
   left: 15px;
 }
 
@@ -567,6 +570,7 @@
 }
 
 #search_container {
+  width: 92vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,8 +578,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
