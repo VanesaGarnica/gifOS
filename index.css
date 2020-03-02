@@ -435,6 +435,8 @@
 
 .trending_container {
   width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
